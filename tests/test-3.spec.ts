@@ -20,4 +20,12 @@ test('test', async ({ page }) => {
 
   expect(await page.locator("//dd[normalize-space()='International Air Parcel']")).toHaveText('International Air Parcel')
 
+  // await page.locator('div').filter({ hasText: /^Weight \(kg\)Max Weight is 30 kg$/ }).first().click();
+  // await page.getByText('Calculate').click();
+
+  // await page.locator('#contentBody div').filter({ hasText: 'Get your domestic or' }).nth(2).click();
+  // await page.getByText('Calculate').click();
+
+
+
 });
