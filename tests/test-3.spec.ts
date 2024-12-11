@@ -5,17 +5,8 @@ test('test', async ({ page }) => {
 
   await page.waitForTimeout(3000)
 
-  /*await page.evaluate(()=>{
-    window.scrollTo(0,document.body.scrollHeight);
-  }); */
-  
-let pincode= await page.getByPlaceholder('Postcode').first();
-pincode.scrollIntoViewIfNeeded();
-
- // await page.getByRole('heading', { name: 'Get your domestic or' }).scrollIntoViewIfNeeded();
-
-  // await page.keyboard.down('PageDown')
-
+  let pincode= await page.getByPlaceholder('Postcode').first();
+  pincode.scrollIntoViewIfNeeded();
   await page.getByPlaceholder('Postcode').first().fill('35600');
   await page.getByPlaceholder('Select country').fill('India');
   await page.getByText('India - IN').click();
