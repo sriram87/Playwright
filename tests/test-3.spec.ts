@@ -17,8 +17,6 @@ pincode.scrollIntoViewIfNeeded();
   // await page.keyboard.down('PageDown')
 
   await page.getByPlaceholder('Postcode').first().fill('35600');
-  await page.getByPlaceholder('Select country').click();
-  await page.getByPlaceholder('Select country').clear();
   await page.getByPlaceholder('Select country').fill('India');
   await page.getByText('India - IN').click();
   await page.getByPlaceholder('eg. 0.1kg').click();
