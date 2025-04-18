@@ -38,26 +38,26 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'],
         viewport: { width: 1920, height: 1080 },
-        screenshot: "on",
+        screenshot: "only-on-failure",
         video: "on",
         trace: "on"
        },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'],
-        viewport: { width: 1280, height: 720 },
-        screenshot: "on",
-        video: "on",
-        trace: "on"
-       },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'],
+    //     viewport: { width: 1280, height: 720 },
+    //     screenshot: "on",
+    //     video: "on",
+    //     trace: "on"
+    //    },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {
